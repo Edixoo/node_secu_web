@@ -5,10 +5,10 @@ const pg = require('pg');
 
 
 const pool = new pg.Pool({
-    user: 'marine',
-    host: '172.31.62.53',
+    user: 'paul',
+    host: 'localhost',
     database: 'formulaire',
-    password: 'marine1107',
+    password: 'Paul2003**',
     port: 5432
 });
 
