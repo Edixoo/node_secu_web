@@ -1,0 +1,17 @@
+html 
+
+    head 
+        title=title
+
+    body
+
+        h1 OTP
+        form(action='/validation' method='post')
+            label(for="mail") Mail: 
+                input(type="text", name="mail")
+
+            label(for="otp_number") OTP :
+                input(type="text", name="otp_number")
+
+            input(type="submit", value="Valider")
+
