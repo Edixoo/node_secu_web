@@ -8,4 +8,6 @@ route.get('/', (req, res) => {
 
 route.post('/', verificationIdentite)
 
-module.exports=route
+module.exports={route}
+
+
