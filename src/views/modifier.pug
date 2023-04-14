@@ -1,0 +1,20 @@
+html 
+
+    head 
+        title=title
+
+    body
+
+        h1 Formulaire de modification
+        form(action='/modification' method='post')
+
+            label(for="mail") Mail :
+                input(type="test", name="mail")
+
+            label(for="password") Ancien Password: 
+                input(type="text", name="ancienpassword")
+                
+            label(for="password") New Password: 
+                input(type="text", name="newpassword")
+
+            input(type="submit", value="Modifier")

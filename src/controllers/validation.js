@@ -26,9 +26,12 @@ const validationIdentite = (req, res) => {
     const email_utilisateur = req.body.mail
 
     const query = {
-        text: 'SELECT otp FROM identite_personne WHERE mail = $1 AND otp = $2',
+        text: 'SELECT * FROM identite_personne WHERE mail = $1 AND otp = $2',
         values: [email_utilisateur, otp_utilisateur]
     };
+
+    console.log(email_utilisateur)
+    console.log(otp_utilisateur)
 
 
     pool.query(query, (err, result) => {
@@ -40,6 +43,7 @@ const validationIdentite = (req, res) => {
                 "message": err
             })
         } else {
+            console.log(result)
             let otp_bdd = result.rows[0].otp
             if (otp_bdd != otp_utilisateur) {
                 res.redirect('/')
