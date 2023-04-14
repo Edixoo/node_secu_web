@@ -21,6 +21,11 @@ Tout d'abord pour gérer la base de données, il vous faut mettre en place une b
 
 > ./src/P1etP2/injection_XSS.js
 
+Pour lancer le fichier il vous suffira de faire:
+
+```
+npm run injxss
+```
 
 ## OTP Securisation par mail
 
@@ -31,3 +36,5 @@ Pour pouvoir utiliser le système d'OTP, il suffira d'utiliser la commande:
 ```
 npm run otp
 ```
+
+Fait par Marine Langrez et Paul Pruvost
